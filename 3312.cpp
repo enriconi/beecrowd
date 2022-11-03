@@ -1,8 +1,8 @@
 #include <iostream>
 
 /*
-  Meu agradecimento especial ao @feodorv (https://www.beecrowd.com.br/judge/pt/profile/175304),
-  que me indicou a estudar sobre pré-calcular os fatoriais e ao GeeksForGeeks (https://www.geeksforgeeks.org/factorial-large-number/) pelo tutorial! :)
+  Meu agradecimento especial ao @feodorv (https://www.beecrowd.com.br/judge/pt/profile/175304), que me indicou a estudar sobre pré-calcular os fatoriais.
+  E ao GeeksForGeeks (https://www.geeksforgeeks.org/factorial-large-number/) pelo tutorial! :)
 */
 
 using namespace std;
@@ -45,7 +45,8 @@ int multiply(int x, int res[], int res_size) {
   return res_size;
 }
  
-int main() {
+int main() 
+{
   int n, a;
 
   cin >> a;
