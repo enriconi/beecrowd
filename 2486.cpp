@@ -10,7 +10,7 @@ int main()
   while (cin >> n && n != 0) {
     for (int i = 0; i < n; i++) {
       cin >> qtd;
-      getline(cin , alimento);
+      getline(cin, alimento);
 
       if (alimento == " suco de laranja") meta += qtd * 120;
       else if (alimento == " morango fresco" || alimento == " mamao") meta += qtd * 85;
