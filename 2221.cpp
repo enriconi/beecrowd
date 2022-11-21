@@ -13,8 +13,8 @@ int main()
     cin >> aA >> dA >> nA;
     cin >> aB >> dB >> nB;
 
-    vGA = ((aA + dA) / 2 );
-    vGB = ((aB + dB) / 2 );
+    vGA = ((aA + dA) / 2);
+    vGB = ((aB + dB) / 2);
 
     if (nA % 2 == 0) vGA += b;
     if (nB % 2 == 0) vGB += b;
