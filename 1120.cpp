@@ -18,7 +18,7 @@ int main()
 {
   char a;
   string b;
-  bool isEqual = true, isOnlyZero = true;
+  bool isOnlyZero = true;
 
   while (cin >> a >> b && (a != '0' || b != "0")) {
     b.erase(remove(b.begin(), b.end(), a), b.end());
