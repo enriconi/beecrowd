@@ -9,7 +9,7 @@ int main()
   char n[11];
   long long int soma = 0, aux = 0;
 
-  while(cin >> n) {
+  while (cin >> n) {
     for (int i = strlen(n) - 1; i >= 0; i--) {
       soma += (n[i] - 'A' + 1) * pow(26, aux); 
       aux++;
