@@ -13,6 +13,8 @@ int main()
     cin >> b;
 
     cout << "Instancia " << aux << endl;
+    // npos => uma constante (-1) que representa uma não-posição,
+    // que retorna do .find() quando o padrão não foi encontrado
     if (b.find(a) != string::npos) cout << "verdadeira" << endl;
     else cout << "falsa" << endl;
     
