@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-
   map<string, string> p;
 
   p["brasil"] = "Feliz Natal!";
