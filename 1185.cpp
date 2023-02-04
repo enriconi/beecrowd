@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-
   double m[12][12], sum = 0.0;
   char c;
 
