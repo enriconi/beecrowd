@@ -4,14 +4,11 @@ using namespace std;
 
 int main()
 {
-  int x1, x2, y1, y2;
+  int xA, xB, yA, yB;
 
-  while (cin >> x1 >> y1 >> x2 >> y2 && ((x1 + y1 + x2 + y2) != 0)) {
-    if (x1 == x2 && y1 == y2) cout << 0 << endl;
-    else if (x1 == x2 || y1 == y2) cout << 1 << endl;
-    else if (x1 == x2 || y1 == y2) cout << 1 << endl;
-    else if ((x2 - x1) == (y2 - y1) || -(x2 - x1) == (y2 - y1) 
-      || -(x2 - x1) == -(y2 - y1) || (x2 - x1) == -(y2 - y1)) cout << 1 << endl;
+  while (cin >> xA >> yA >> xB >> yB && ((xA + yA + xB + yB) != 0)) {
+    if (xA == xB && yA == yB) cout << 0 << endl;
+    else if (xA == xB || yA == yB || (abs(xA - xB) == abs(yA - yB))) cout << 1 << endl;
     else cout << 2 << endl;
   }
   
