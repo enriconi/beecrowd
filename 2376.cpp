@@ -7,7 +7,7 @@ int main()
 {
   vector<char> v[5];
 
-	for (char i = 'A'; i <= 'P'; i++) v[0].push_back(i); 
+  for (char i = 'A'; i <= 'P'; i++) v[0].push_back(i); 
 
   for (int i = 1; i <= 4; i++) {
     for (int j = 1; j <= v[i - 1].size(); j += 2) {
