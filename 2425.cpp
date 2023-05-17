@@ -1,31 +1,32 @@
 #include <iostream>
-#include <vector>
 #include <queue>
-#include <utility>
+#include <algorithm>
 
 using namespace std;
 
 int main()
 {
-  priority_queue <pair<int, int>> pq;
-  int c, n, t, d, ans = 0, aux;
+  priority_queue<int, vector<int>, greater<int>> pq;
+  int c, n, t, d, ans = 0;
 
   cin >> c >> n;
 
-  for (int i = 0; i < n; i++) {
+  for (int i = 0; i < c; i++) {
     cin >> t >> d;
-    aux += d;
-    pq.push(make_pair(t, d));
+    pq.push(t + d);
   }
 
-
-  while (pq.size() > 0) {
-    aux -= pq.top().second;
-    if ((aux - pq.top().first) > 20) ans++; 
+  for (int i = c; i < n; i++) {
+    cin >> t >> d;
+    
+    int aux = pq.top();
     pq.pop();
+    
+    if ((aux - t) > 20) ans++;
+    pq.push(max(aux, t) + d);
   }
 
-  cout << ans << endl;
+  cout << ans << endl; 
 
   return 0;
 }
