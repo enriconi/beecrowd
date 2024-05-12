@@ -3,6 +3,7 @@
 using namespace std;
 
 #define MAXN 50010
+#define EPS 1e-9
 #define endl '\n'
 
 typedef long long ll;
